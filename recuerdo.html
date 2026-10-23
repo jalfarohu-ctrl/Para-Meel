@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Recuerdos 💜 | Meel</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="recuerdo.css">
+</head>
+<body>
+
+  <div class="decoraciones" id="decoraciones" aria-hidden="true"></div>
+
+  <header class="navegacion">
+    <a href="index.html" class="marca">Para Meel ♡</a>
+    <nav>
+      <a href="index.html">♡ Inicio</a>
+      <a href="recuerdo.html" class="activo">✿ Recuerdos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portada">
+      <div class="flor flor-izquierda">✿</div>
+      <div class="flor flor-derecha">✿</div>
+
+      <div class="etiqueta">UN PEDACITO DE NUESTRA HISTORIA</div>
+
+      <h1>Nuestros <span>Recuerdos</span></h1>
+
+      <p class="subtitulo">
+        Hay momentos que duran segundos,
+        pero se quedan para siempre en el corazón.
+      </p>
+
+      <div class="corazon-principal">♥</div>
+
+      <p class="dedicatoria">
+        Cada fotografía guarda un instante,
+        cada sonrisa cuenta una historia
+        y cada recuerdo me recuerda lo bonito
+        que es tenerte en mi vida.
+      </p>
+
+      <a href="#galeria" class="boton-principal">
+        Descubrir nuestros momentos ↓
+      </a>
+    </section>
+
+    <section class="seccion-galeria" id="galeria">
+      <div class="encabezado">
+        <span class="mini-etiqueta">✦ NUESTROS MOMENTOS ✦</span>
+        <h2>Pequeños instantes, <em>grandes sentimientos</em></h2>
+        <p>
+          Si pudiera volver a vivir cada momento,
+          volvería a elegir compartirlo contigo.
+        </p>
+      </div>
+
+      <div class="galeria">
+        <div class="polaroid" style="--rot:-4deg">
+          <div class="foto">
+            <img src="recuerdos/mel1.jpeg" alt="Nuestro recuerdo 1" loading="lazy">
+          </div>
+          <p>Un momento especial ♡</p>
+          <span class="sticker">♥</span>
+        </div>
+
+        <div class="polaroid" style="--rot:3deg">
+          <div class="foto">
+            <img src="recuerdos/mel2.jpeg" alt="Nuestro recuerdo 2" loading="lazy">
+          </div>
+          <p>Contigo todo es bonito ✿</p>
+        </div>
+
+        <div class="polaroid" style="--rot:-2deg">
+          <div class="foto">
+            <img src="recuerdos/mel3.jpeg" alt="Nuestro recuerdo 3" loading="lazy">
+          </div>
+          <p>Mi sonrisa favorita ♡</p>
+          <span class="sticker">✿</span>
+        </div>
+
+        
+
+    
+
+    <section class="seccion-video">
+      <div class="encabezado">
+        <span class="mini-etiqueta">♡ UN RECUERDO EN MOVIMIENTO ♡</span>
+        <h2>Momentos que <em>viven para siempre</em></h2>
+        <p>Porque algunos recuerdos merecen volver a sentirse.</p>
+      </div>
+
+      <div class="marco-video">
+        <div class="adorno-video">✿</div>
+        <video controls preload="metadata" playsinline>
+          <source src="recuerdos/melv.mp4" type="video/mp4">
+          Tu navegador no admite videos.
+        </video>
+        <p>Un pedacito de nuestra historia ♥</p>
+      </div>
+    </section>
+
+    <section class="carta-seccion">
+      <div class="carta-contenedor">
+        <div class="sobre" id="sobre" role="button"
+             tabindex="0" aria-label="Abrir carta"
+             aria-expanded="false">
+          <div class="sobre-icono">✉</div>
+          <span>Una carta para ti</span>
+          <small>Toca para abrir ♡</small>
+        </div>
+
+        <div class="carta" id="carta" hidden>
+  <span class="mini-etiqueta">UN MENSAJITO SOLO PARA TI ♡</span>
+
+  <h2>Oye, Meel... ♡</h2>
+
+  <p>
+    No sé qué tienes, pero últimamente tienes
+    la costumbre de aparecer en mis pensamientos
+    sin siquiera avisar. Y lo peor es que
+    tampoco me molesta, jajaja.
+  </p>
+
+  <p>
+    Tú por Huacho y yo por Lima...
+    Quién diría que unos cuantos kilómetros
+    iban a hacer que me dieran tantas ganas
+    de verte. A veces me acuerdo de ti,
+    de nuestras conversaciones y de esos
+    momentos que me sacan una sonrisa
+    sin darme cuenta.
+  </p>
+
+  <p>
+    Y aunque no siempre te escriba,
+    no significa que no me acuerde de ti.
+    Hay días en los que quisiera tenerte
+    cerquita, molestarte un ratito,
+    hacerte reír y, si te dejas,
+    robarte uno que otro beso.
+  </p>
+
+  <p>
+    Solo espero que nos veamos pronto.
+    Porque hay una sonrisa que tengo
+    pendiente contigo, y quizás
+    un abrazo que dure más de la cuenta.
+  </p>
+
+  <div class="firma">Desde Lima, alguien que te piensa más de lo que admite ♡</div>
+</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="visor" id="visor" role="dialog"
+       aria-modal="true" aria-label="Fotografía ampliada"
+       hidden>
+    <button class="cerrar-visor" id="cerrarVisor"
+            aria-label="Cerrar fotografía">×</button>
+    <button class="flecha anterior" id="anterior"
+            aria-label="Foto anterior">‹</button>
+    <img id="imagenGrande" src="" alt="Recuerdo ampliado">
+    <button class="flecha siguiente" id="siguiente"
+            aria-label="Foto siguiente">›</button>
+    <div class="contador" id="contador"></div>
+  </div>
+
+  <footer>
+    <div class="footer-corazon">♥</div>
+    <p>Hecho con mucho amor, especialmente para ti.</p>
+    <span>Para Meel, con cariño infinito ♡</span>
+  </footer>
+
+  <script src="recuerdo.js"></script>
+</body>
+</html>

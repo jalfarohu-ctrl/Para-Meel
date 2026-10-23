@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10091c">
+  <title>Para Meel ♡ | Nuestro pequeño universo</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <div class="ambiental" aria-hidden="true"></div>
+  <div id="particulas" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <a href="#inicio" class="logo">Para Meel <span>♡</span></a>
+
+    <nav class="menu" aria-label="Navegación">
+    
+    </nav>
+
+    
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      
+<!-- DECORACIÓN ROMÁNTICA DE PORTADA -->
+<div class="decoracion-romantica" aria-hidden="true">
+
+  <!-- Flores moradas -->
+  <span class="flor-deco flor-1">✿</span>
+  <span class="flor-deco flor-2">❀</span>
+  <span class="flor-deco flor-3">✾</span>
+  <span class="flor-deco flor-4">✿</span>
+  <span class="flor-deco flor-5">❀</span>
+  <span class="flor-deco flor-6">✾</span>
+
+  <!-- Corazones flotantes -->
+  <span class="corazon-deco corazon-1">♥</span>
+  <span class="corazon-deco corazon-2">♡</span>
+  <span class="corazon-deco corazon-3">♥</span>
+  <span class="corazon-deco corazon-4">♡</span>
+
+  <!-- Destellos -->
+  <span class="brillo-deco brillo-1">✦</span>
+  <span class="brillo-deco brillo-2">✧</span>
+  <span class="brillo-deco brillo-3">✦</span>
+  <span class="brillo-deco brillo-4">✧</span>
+
+  <!-- Inicial decorativa -->
+  <span class="inicial-meel">M</span>
+
+</div>
+
+
+      <span class="flower flower-left" aria-hidden="true">✿</span>
+      <span class="flower flower-right" aria-hidden="true">❀</span>
+
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="tiny-heart">♥</span>
+          UN PEQUEÑO UNIVERSO PARA TI
+          <span class="tiny-heart">♥</span>
+        </div>
+
+        <p class="intro">Si pudiera regalarte algo...</p>
+
+        <h1>
+          Te Amo,
+          <span>Meel</span>
+        </h1>
+
+        <div class="heart-scene" aria-hidden="true">
+          <div class="heart-glow"></div>
+          <div class="heart-shape"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <span class="spark s1">✦</span>
+          <span class="spark s2">✧</span>
+          <span class="spark s3">✦</span>
+        </div>
+
+        <p class="hero-message">
+          Te regalaría todos los momentos en los que
+          has hecho sonreír a mi corazón, para que
+          descubras lo especial que eres para mí.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#carta">
+            Leer algo para ti ♡
+          </a>
+          <a class="btn btn-outline" href="recuerdo.html">
+            Ver nuestros recuerdos ↗
+          </a>
+        </div>
+
+        <div class="scroll-hint">DESLIZA PARA DESCUBRIR ↓</div>
+        
+<div class="mapa-amor-container">
+  <h2>Pronto estaremos juntos ♡</h2>
+
+  <p>
+    No importa cuántos kilómetros nos separen,
+    cada día falta menos para volver a verte.
+  </p>
+
+  <div class="mapa-amor-imagen">
+    <img src="./recuerdos/mapaamor.jpeg" alt="Mapa romántico con corazones" loading="lazy">
+</div>
+  <span class="mapa-frase">
+    De Lima a Huacho, mi corazón siempre va contigo ♥
+  </span>
+</div>
+
+      </div>
+    </section>
+
+    
+<section class="message-section reveal" id="carta">
+
+  <div class="section-heading">
+    <span class="kicker">✦ UN MENSAJE PARA TI ✦</span>
+    <h2>Hay algo que quiero <em>decirte...</em></h2>
+  </div>
+
+  <div class="letter-card carta-especial">
+
+    <div class="letter-corner">✿</div>
+
+    <span class="letter-icon">♡</span>
+
+    <h3>Para ti, Meel...</h3>
+
+    <p class="mi-frase-romantica">
+      No creas que porque no te hablo,<br>
+      no te pienso;<br><br>
+      o que porque no te busco,<br>
+      no te extraño.
+    </p>
+
+    <div class="decoracion-final">✦ ♡ ✦</div>
+
+  </div>
+
+</section>
+
+
+    <section class="distance-section reveal" id="distancia">
+      <div class="section-heading">
+        <span class="kicker">♡ DOS CIUDADES, UN SENTIMIENTO ♡</span>
+        <h2>De Lima a <em>Huacho</em></h2>
+        <p>
+          Tal vez nos separen kilómetros,
+          pero hay sentimientos que no conocen distancias.
+        </p>
+      </div>
+
+      <div class="distance-card">
+        <div class="cities">
+          <div class="city">
+            <span class="city-dot"></span>
+            <div>
+              <strong>Huacho</strong>
+              <small>Un pedacito de nuestra historia</small>
+            </div>
+          </div>
+
+          <div class="city-line">
+            <span>♥</span>
+          </div>
+
+          <div class="city">
+            <span class="city-dot"></span>
+            <div>
+              <strong>Lima</strong>
+              <small>Otro pedacito del mismo amor</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrapper">
+          <div id="map" aria-label="Mapa entre Huacho y Lima"></div>
+          <div class="map-label">♡ Unidos a pesar de la distancia</div>
+        </div>
+
+        <p class="map-note">
+          El mapa muestra ambas ciudades y una conexión
+          simbólica entre ellas, no una ruta de carretera.
+        </p>
+      </div>
+    </section>
+
+    <section class="final-section reveal">
+      <div class="final-heart">♥</div>
+      <span class="kicker">MI LUGAR FAVORITO</span>
+      <h2>No es un lugar... <em>eres tú.</em></h2>
+      <p>
+        Y si tuviera que elegir entre miles de caminos,
+        volvería a elegir aquel que me llevó a conocerte.
+      </p>
+      <a class="btn btn-primary" href="recuerdo.html">
+        Nuestro álbum de recuerdos ♡
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <span>✿</span>
+    <p>Hecho con amor, especialmente para Meel.</p>
+    <small>De Lima  a Huacho, y de mi corazón al tuyo ♡</small>
+  </footer>
+
+  <audio id="myAudio" autoplay loop preload="auto">
+  <source src="./Me_Enamoré.mp3" type="audio/mpeg">
+</audio>
+</audio>
+</body>
+</html>
